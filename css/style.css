@@ -101,6 +101,25 @@ img { max-width: 100%; display: block; }
 }
 .order-summary { color: var(--charcoal); font-size: 0.98rem; white-space: pre-line; line-height: 1.7; margin: 0; }
 #orderBtn[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
+
+/* ---------- Vote for next scent ---------- */
+.vote-grid { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; margin-top: 8px; }
+.vote-opt {
+  font-family: var(--sans); font-size: 0.95rem;
+  padding: 14px 26px; border-radius: 40px;
+  border: 1px solid var(--pink-mid); background: var(--white);
+  color: var(--charcoal); cursor: pointer; transition: all 0.2s ease;
+}
+.vote-opt:hover { border-color: var(--rose); background: var(--pink-soft); transform: translateY(-2px); }
+.vote-opt.suggest { border-style: dashed; color: var(--rose-deep); }
+
+/* ---------- Occasion chips ---------- */
+.chips { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 4px 0 30px; }
+.chip {
+  font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--rose-deep); border: 1px solid var(--pink-mid);
+  border-radius: 30px; padding: 8px 18px;
+}
 .brand .name {
   font-family: var(--serif); font-size: 1.7rem; font-weight: 600;
   letter-spacing: 0.04em; color: var(--charcoal);
