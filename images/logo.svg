@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Amora By Dani">
+  <circle cx="32" cy="32" r="31" fill="#f9e3e9"/>
+  <circle cx="32" cy="32" r="31" fill="none" stroke="#d98a9a" stroke-width="1.5"/>
+  <!-- spritz -->
+  <circle cx="44" cy="11" r="1.6" fill="#b9647a"/>
+  <circle cx="48" cy="15" r="1.2" fill="#b9647a"/>
+  <circle cx="46" cy="19" r="1" fill="#b9647a"/>
+  <!-- nozzle -->
+  <rect x="37" y="13" width="6" height="4" rx="1.5" fill="#b9647a"/>
+  <!-- cap -->
+  <rect x="27" y="12" width="10" height="7" rx="2" fill="#b9647a"/>
+  <!-- neck -->
+  <rect x="28" y="19" width="8" height="6" fill="#c77689"/>
+  <!-- body -->
+  <rect x="21" y="24" width="22" height="28" rx="7" fill="#d98a9a"/>
+  <!-- label -->
+  <rect x="21" y="34" width="22" height="9" fill="#ffffff" opacity="0.85"/>
+  <!-- monogram A -->
+  <path d="M28.8 42 L32 35.6 L35.2 42 M30.2 39.6 H33.8" fill="none" stroke="#b9647a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

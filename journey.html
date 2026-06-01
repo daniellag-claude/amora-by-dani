@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Journey — Amora By Dani</title>
+  <meta name="description" content="The journey behind Amora By Dani, from a simple idea to a handmade perfume label in Johannesburg." />
+  <!-- Social sharing. Update the domain in these URLs once the site is live at its real address. -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Amora By Dani" />
+  <meta property="og:title" content="My Journey: Amora By Dani" />
+  <meta property="og:description" content="From a simple idea to a handmade perfume label, the fun, messy story of building Amora By Dani." />
+  <meta property="og:url" content="https://daniellag-claude.github.io/amora-by-dani/journey.html" />
+  <meta property="og:image" content="https://daniellag-claude.github.io/amora-by-dani/images/cards.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="My Journey: Amora By Dani" />
+  <meta name="twitter:description" content="From a simple idea to a handmade perfume label, the fun, messy story of building Amora By Dani." />
+  <meta name="twitter:image" content="https://daniellag-claude.github.io/amora-by-dani/images/cards.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .journey-anim{background:#fdeef3;border-radius:18px;min-height:340px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:18px;}
+    .journey-anim svg{width:100%;height:auto;max-width:440px;}
+    .anim-cap{font-size:.86rem;color:#9c6a7c;text-align:center;font-style:italic;margin:0;}
+    .float-1{animation:bob 3s ease-in-out infinite;}
+    .float-2{animation:bob 3.6s ease-in-out infinite .4s;}
+    .float-3{animation:bob 4.2s ease-in-out infinite .8s;}
+    .gear{animation:spin 6s linear infinite;transform-box:fill-box;transform-origin:center;}
+    .gear2{animation:spinrev 5s linear infinite;transform-box:fill-box;transform-origin:center;}
+    .bulb{animation:glow 2.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+    .steam{animation:steam 2.8s ease-in-out infinite;}
+    .steam.s2{animation-delay:1s;}
+    .head{animation:tilt 4s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 90%;}
+    .arm-tap{animation:tap 1.5s ease-in-out infinite;transform-box:fill-box;transform-origin:80% 8%;}
+    .spark{animation:twinkle 2.2s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+    .spark.d1{animation-delay:.5s;}.spark.d2{animation-delay:1s;}.spark.d3{animation-delay:1.5s;}
+    .dot{animation:pulse 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center;}
+    .dot.b{animation-delay:.3s;}.dot.c{animation-delay:.6s;}
+    .bar{animation:bars 1.4s ease-in-out infinite;}
+    .bar.b2{animation-delay:.35s;}.bar.b3{animation-delay:.7s;}
+    .squiggle{stroke-dasharray:130;animation:draw 3.6s ease-in-out infinite;}
+    @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    @keyframes spinrev{to{transform:rotate(-360deg)}}
+    @keyframes glow{0%,100%{opacity:.4}50%{opacity:1}}
+    @keyframes steam{0%{opacity:0;transform:translateY(2px)}35%{opacity:.7}100%{opacity:0;transform:translateY(-14px)}}
+    @keyframes tilt{0%,100%{transform:rotate(0)}50%{transform:rotate(-5deg)}}
+    @keyframes tap{0%,100%{transform:rotate(0)}50%{transform:rotate(8deg)}}
+    @keyframes twinkle{0%,100%{opacity:.2;transform:scale(.5)}50%{opacity:1;transform:scale(1)}}
+    @keyframes pulse{0%,100%{opacity:.2;transform:scale(.6)}50%{opacity:1;transform:scale(1)}}
+    @keyframes bars{0%,100%{opacity:.35}50%{opacity:1}}
+    @keyframes draw{0%{stroke-dashoffset:130}45%,55%{stroke-dashoffset:0}100%{stroke-dashoffset:-130}}
+    @media (prefers-reduced-motion:reduce){.journey-anim *{animation:none!important}}
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="brand">
+        <img src="images/logo.svg" alt="Amora By Dani logo" class="brand-logo" />
+        <span class="brand-text">
+          <span class="name">Amora</span>
+          <span class="sub">by Dani</span>
+        </span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="journey.html" class="active">My Journey</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </nav>
+  </header>
+
+  <section class="hero" style="padding: 90px 24px 60px;">
+    <p class="eyebrow">My journey</p>
+    <h1>How Amora came to be</h1>
+    <p>Part perfume, part chaos, all heart. Here is the slightly messy, very fun story of a girl figuring out the business world one bottle at a time.</p>
+  </section>
+
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="split">
+        <div class="journey-anim" role="img" aria-label="An animated illustration of Dani working, planning and figuring out the business">
+          <svg viewBox="0 0 400 360" xmlns="http://www.w3.org/2000/svg">
+            <!-- twinkling sparkles -->
+            <g class="spark" fill="#e7a8bf"><path d="M118 58 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/></g>
+            <g class="spark d1" fill="#ffd166"><path d="M60 132 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/></g>
+            <g class="spark d2" fill="#e7a8bf"><path d="M352 212 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3z"/></g>
+            <g class="spark d3" fill="#ffd166"><path d="M300 40 l2.5 6 6 2.5 -6 2.5 -2.5 6 -2.5 -6 -6 -2.5 6 -2.5z"/></g>
+
+            <!-- thought trail from head up to the idea -->
+            <circle class="dot a" cx="175" cy="118" r="3" fill="#c46a86"/>
+            <circle class="dot b" cx="150" cy="108" r="3.5" fill="#c46a86"/>
+            <circle class="dot c" cx="122" cy="98" r="4" fill="#c46a86"/>
+
+            <!-- floating idea: lightbulb -->
+            <g class="float-1">
+              <circle class="bulb" cx="92" cy="86" r="16" fill="#ffe08a"/>
+              <rect x="85" y="99" width="14" height="8" rx="2" fill="#caa24a"/>
+              <line x1="88" y1="110" x2="96" y2="110" stroke="#caa24a" stroke-width="2"/>
+            </g>
+
+            <!-- floating planning: clipboard -->
+            <g class="float-2">
+              <rect x="292" y="68" width="34" height="44" rx="5" fill="#ffffff" stroke="#c46a86" stroke-width="2"/>
+              <rect x="303" y="63" width="12" height="8" rx="2" fill="#c46a86"/>
+              <rect x="299" y="82" width="20" height="3" rx="1.5" fill="#e7a8bf"/>
+              <rect x="299" y="90" width="20" height="3" rx="1.5" fill="#e7a8bf"/>
+              <rect x="299" y="98" width="13" height="3" rx="1.5" fill="#e7a8bf"/>
+            </g>
+
+            <!-- floating figuring-it-out: interlocking gears -->
+            <g class="float-3">
+              <g class="gear">
+                <circle cx="328" cy="170" r="14" fill="none" stroke="#c46a86" stroke-width="7" stroke-dasharray="5 7"/>
+                <circle cx="328" cy="170" r="5" fill="#fdeef3" stroke="#c46a86" stroke-width="2"/>
+              </g>
+              <g class="gear2">
+                <circle cx="354" cy="152" r="10" fill="none" stroke="#b5577a" stroke-width="6" stroke-dasharray="4 6"/>
+                <circle cx="354" cy="152" r="3.5" fill="#fdeef3" stroke="#b5577a" stroke-width="2"/>
+              </g>
+            </g>
+
+            <!-- floating question mark -->
+            <text class="float-2" x="58" y="190" font-family="'Cormorant Garamond', serif" font-size="34" fill="#b5577a">?</text>
+
+            <!-- 'finding the way' squiggle that keeps drawing itself -->
+            <path class="squiggle" d="M58 318 q20 -22 40 -6 q18 14 34 -6 q14 -14 30 0" fill="none" stroke="#b5577a" stroke-width="3" stroke-linecap="round"/>
+            <path d="M160 300 l9 6 -10 5z" fill="#b5577a"/>
+
+            <!-- desk -->
+            <rect x="64" y="252" width="272" height="13" rx="5" fill="#c46a86"/>
+            <!-- chair back -->
+            <rect x="166" y="180" width="68" height="78" rx="18" fill="#e79ab4"/>
+            <!-- torso -->
+            <rect x="170" y="190" width="60" height="66" rx="20" fill="#b5577a"/>
+            <!-- left arm -->
+            <path d="M176,208 Q165,234 188,244" fill="none" stroke="#ecc4a0" stroke-width="11" stroke-linecap="round"/>
+            <!-- right arm (taps the desk) -->
+            <g class="arm-tap">
+              <path d="M224,208 Q235,234 212,244" fill="none" stroke="#ecc4a0" stroke-width="11" stroke-linecap="round"/>
+            </g>
+            <!-- neck -->
+            <rect x="193" y="170" width="14" height="18" fill="#ecc4a0"/>
+            <!-- head -->
+            <g class="head">
+              <ellipse cx="200" cy="148" rx="28" ry="27" fill="#5b3a29"/>
+              <circle cx="200" cy="152" r="22" fill="#ecc4a0"/>
+              <path d="M178,144 Q200,120 222,144 Q210,134 200,135 Q190,134 178,144 Z" fill="#5b3a29"/>
+              <circle cx="192" cy="152" r="2.4" fill="#3a2a20"/>
+              <circle cx="208" cy="152" r="2.4" fill="#3a2a20"/>
+              <path d="M193,161 Q200,166 207,161" fill="none" stroke="#b5577a" stroke-width="2" stroke-linecap="round"/>
+            </g>
+            <!-- perfume bottle on the desk -->
+            <rect x="92" y="228" width="20" height="24" rx="3" fill="#e79ab4"/>
+            <rect x="98" y="220" width="8" height="9" rx="1.5" fill="#c46a86"/>
+            <rect x="96" y="236" width="12" height="9" rx="1.5" fill="#ffffff" opacity=".7"/>
+            <!-- laptop with 'typing' screen -->
+            <rect x="172" y="244" width="56" height="9" rx="2" fill="#4a4a55"/>
+            <rect x="178" y="220" width="44" height="26" rx="3" fill="#3a3a48"/>
+            <rect x="182" y="224" width="36" height="18" rx="2" fill="#8fd0d6"/>
+            <rect class="bar" x="186" y="227" width="24" height="2.6" rx="1.3" fill="#2f2f3c"/>
+            <rect class="bar b2" x="186" y="232" width="18" height="2.6" rx="1.3" fill="#2f2f3c"/>
+            <rect class="bar b3" x="186" y="237" width="22" height="2.6" rx="1.3" fill="#2f2f3c"/>
+            <!-- mug + steam -->
+            <rect x="288" y="232" width="26" height="20" rx="4" fill="#ffffff" stroke="#c46a86" stroke-width="2"/>
+            <path d="M314,236 q8,2 0,12" fill="none" stroke="#c46a86" stroke-width="2"/>
+            <path class="steam" d="M296,228 q-4,-7 0,-13" fill="none" stroke="#d7adba" stroke-width="3" stroke-linecap="round"/>
+            <path class="steam s2" d="M306,228 q-4,-7 0,-13" fill="none" stroke="#d7adba" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+          <p class="anim-cap">Me on a typical day: one part inspiration, two parts figuring it out.</p>
+        </div>
+        <div>
+          <p class="eyebrow accent">Where it started</p>
+          <h2>One idea, zero clue, lots of heart</h2>
+          <p>I did not wake up one day knowing how to run a business. Honestly, I still google half of it. What I did have was one stubborn little idea: that a perfume should feel like you, not just smell nice.</p>
+          <p>So I rolled up my sleeves in Johannesburg, made a glorious mess, tested far too many blends, and slowly turned that idea into something real. Amora is me learning the business world out loud, and loving every chaotic minute of it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The story so far</p>
+        <h2>From idea to bottle</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>The lightbulb moment</h3>
+          <p>It started with one cheeky thought: why can't a perfume have a personality, a mood, a whole vibe of its own? Once I thought it, I could not unthink it.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Trial, error and a lot of sniffing</h3>
+          <p>Cue months of blending, testing, getting it gloriously wrong, and trying again. Three personalities finally stuck: the Workoholic, the Overthinker and the Charmer.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Welcome to the business world</h3>
+          <p>Then came the grown-up stuff: pricing, packaging, labels, and a hundred things I learned on the fly. Turns out running a brand is a whole adventure of its own.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>Making it unmistakably mine</h3>
+          <p>I gave every scent its own playlist on a little QR card, because a mood is never only a smell. Hand-blended in small batches in Joburg, with a personal hello in every order.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow accent">What's next</p>
+        <h2>Still figuring it out, still having fun</h2>
+        <p>I learn something new every single day, and this is only chapter one. Grab the scent that sounds like you and come along for the ride.</p>
+      </div>
+      <div style="text-align:center;">
+        <a href="shop.html" class="btn">Shop the scents</a>
+        <a href="https://instagram.com/amora.by.dani" class="btn btn-ghost" target="_blank" rel="noopener">Follow the journey</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="container">
+      <p class="eyebrow accent" style="text-align:center;">Amora By Dani</p>
+      <h2 style="text-align:center; font-size:2.6rem; margin-top:6px;">The smell of success.</h2>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <span class="name">Amora</span>
+        <span class="sub">by Dani</span>
+        <p>Handmade 15ml perfume sprays, each with its own personality and playlist. Made with love in Johannesburg.</p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="workoholic.html">The Workoholic</a></li>
+          <li><a href="overthinker.html">The Overthinker</a></li>
+          <li><a href="charmer.html">The Charmer</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>More</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="journey.html">My Journey</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://instagram.com/amora.by.dani" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2026 Amora By Dani. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
