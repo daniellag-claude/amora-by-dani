@@ -82,6 +82,25 @@ img { max-width: 100%; display: block; }
 .brand { display: inline-flex; align-items: center; gap: 10px; line-height: 1; }
 .brand-logo { width: 42px; height: 42px; flex: none; }
 .brand-text { display: flex; flex-direction: column; }
+
+/* ---------- Shop order helper ---------- */
+.qty { display: flex; align-items: center; gap: 14px; margin-top: 8px; }
+.qty-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.qbtn {
+  width: 34px; height: 34px; border-radius: 50%;
+  border: 1px solid var(--rose); background: var(--white);
+  color: var(--rose-deep); font-size: 1.2rem; line-height: 1;
+  cursor: pointer; transition: all 0.2s ease;
+}
+.qbtn:hover { background: var(--rose); color: var(--white); }
+.qval { min-width: 22px; text-align: center; font-size: 1.05rem; }
+.order-bar {
+  margin-top: 50px; padding: 30px 24px; border-radius: var(--radius);
+  background: var(--pink-soft); text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 18px;
+}
+.order-summary { color: var(--charcoal); font-size: 0.98rem; white-space: pre-line; line-height: 1.7; margin: 0; }
+#orderBtn[aria-disabled="true"] { opacity: 0.45; pointer-events: none; }
 .brand .name {
   font-family: var(--serif); font-size: 1.7rem; font-weight: 600;
   letter-spacing: 0.04em; color: var(--charcoal);

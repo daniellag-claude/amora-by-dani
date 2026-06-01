@@ -36,6 +36,7 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="shop.html" class="active">Shop</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
         <li><a href="about.html">Our Story</a></li>
         <li><a href="journey.html">My Journey</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -47,7 +48,7 @@
   <section class="hero" style="padding: 80px 24px;">
     <p class="eyebrow">The collection</p>
     <h1>Shop Amora</h1>
-    <p>Every bottle is a 15ml spray. Free to find the one that sounds like you.</p>
+    <p>Every bottle is a 15ml spray, R120 each. Not sure which is you? <a href="quiz.html" class="accent">Take the scent quiz</a>.</p>
   </section>
 
   <section class="section" style="padding-top: 30px;">
@@ -62,8 +63,13 @@
             <h3>The Workoholic</h3>
             <p class="desc">Warm, sophisticated and a little bit fruity. For the on-the-go mom and the dedicated student.</p>
             <p class="price">R120</p>
-            <a href="https://instagram.com/amora.by.dani" class="btn" target="_blank" rel="noopener">Message to order</a>
-            <a href="workoholic.html" style="margin-top:12px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
+            <div class="qty" data-name="The Workoholic" data-price="120">
+              <span class="qty-label">Qty</span>
+              <button class="qbtn minus" type="button" aria-label="Remove one">&minus;</button>
+              <span class="qval">0</span>
+              <button class="qbtn plus" type="button" aria-label="Add one">+</button>
+            </div>
+            <a href="workoholic.html" style="margin-top:14px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
           </div>
         </article>
 
@@ -75,8 +81,13 @@
             <h3>The Overthinker</h3>
             <p class="desc">Bold, warm and a little addictive. For the ones whose brain is always on.</p>
             <p class="price">R120</p>
-            <a href="https://instagram.com/amora.by.dani" class="btn" target="_blank" rel="noopener">Message to order</a>
-            <a href="overthinker.html" style="margin-top:12px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
+            <div class="qty" data-name="The Overthinker" data-price="120">
+              <span class="qty-label">Qty</span>
+              <button class="qbtn minus" type="button" aria-label="Remove one">&minus;</button>
+              <span class="qval">0</span>
+              <button class="qbtn plus" type="button" aria-label="Add one">+</button>
+            </div>
+            <a href="overthinker.html" style="margin-top:14px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
           </div>
         </article>
 
@@ -88,11 +99,21 @@
             <h3>The Charmer</h3>
             <p class="desc">Fresh, clean and confident. For the one who is always smooth, never rushed.</p>
             <p class="price">R120</p>
-            <a href="https://instagram.com/amora.by.dani" class="btn" target="_blank" rel="noopener">Message to order</a>
-            <a href="charmer.html" style="margin-top:12px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
+            <div class="qty" data-name="The Charmer" data-price="120">
+              <span class="qty-label">Qty</span>
+              <button class="qbtn minus" type="button" aria-label="Remove one">&minus;</button>
+              <span class="qval">0</span>
+              <button class="qbtn plus" type="button" aria-label="Add one">+</button>
+            </div>
+            <a href="charmer.html" style="margin-top:14px; font-size:0.78rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--rose-deep);">View details</a>
           </div>
         </article>
 
+      </div>
+
+      <div class="order-bar">
+        <p class="order-summary" id="orderSummary"></p>
+        <a class="btn" id="orderBtn" target="_blank" rel="noopener" aria-disabled="true">Order on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -126,5 +147,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/shop.js"></script>
 </body>
 </html>
