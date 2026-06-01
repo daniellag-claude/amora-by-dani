@@ -120,6 +120,17 @@ img { max-width: 100%; display: block; }
   color: var(--rose-deep); border: 1px solid var(--pink-mid);
   border-radius: 30px; padding: 8px 18px;
 }
+
+/* ---------- Inputs for enquiry / vote ---------- */
+.field-row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; max-width: 580px; margin: 0 auto 22px; }
+.field-row input, .vote-inspired {
+  font-family: var(--sans); font-size: 0.95rem; padding: 13px 18px;
+  border-radius: 30px; border: 1px solid var(--pink-mid);
+  background: var(--white); color: var(--charcoal);
+}
+.field-row input { flex: 1; min-width: 220px; }
+.field-row input:focus, .vote-inspired:focus { outline: none; border-color: var(--rose); }
+.vote-inspired { display: block; width: 100%; max-width: 420px; margin: 0 auto 22px; text-align: center; }
 .brand .name {
   font-family: var(--serif); font-size: 1.7rem; font-weight: 600;
   letter-spacing: 0.04em; color: var(--charcoal);

@@ -55,3 +55,47 @@
 
   update();
 })();
+
+// Personalised enquiry — builds a WhatsApp message from occasion + inspired-by.
+(function () {
+  var occ = document.getElementById("custOccasion");
+  var insp = document.getElementById("custInspired");
+  var btn = document.getElementById("custBtn");
+  if (!btn || !occ || !insp) return;
+  function build() {
+    var o = occ.value.trim();
+    var i = insp.value.trim();
+    var msg = "Hi Dani! I would love a personalised Amora scent";
+    if (o) msg += " for my " + o;
+    if (i) msg += ", inspired by " + i;
+    msg += ". Can we chat?";
+    btn.setAttribute("href", "https://wa.me/27836553095?text=" + encodeURIComponent(msg));
+  }
+  occ.addEventListener("input", build);
+  insp.addEventListener("input", build);
+  build();
+})();
+
+// Next-scent vote — folds the inspired-by text into each vote message.
+(function () {
+  var insp = document.getElementById("voteInspired");
+  var pills = document.querySelectorAll(".vote-opt[data-scent]");
+  var suggest = document.getElementById("voteSuggest");
+  if (!pills.length) return;
+  function build() {
+    var i = insp ? insp.value.trim() : "";
+    pills.forEach(function (p) {
+      var name = p.getAttribute("data-scent");
+      var msg = "Hi Dani! My vote for the next Amora scent is: " + name + ".";
+      if (i) msg += " I would love it inspired by " + i + ".";
+      p.setAttribute("href", "https://wa.me/27836553095?text=" + encodeURIComponent(msg));
+    });
+    if (suggest) {
+      var msg2 = "Hi Dani! My idea for the next Amora scent is: ";
+      if (i) msg2 = "Hi Dani! My idea for the next Amora scent is: [type the name], inspired by " + i + ".";
+      suggest.setAttribute("href", "https://wa.me/27836553095?text=" + encodeURIComponent(msg2));
+    }
+  }
+  if (insp) insp.addEventListener("input", build);
+  build();
+})();

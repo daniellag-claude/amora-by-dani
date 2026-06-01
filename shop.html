@@ -133,8 +133,12 @@
         <span class="chip">Events</span>
         <span class="chip">Corporate gifting</span>
       </div>
+      <div class="field-row">
+        <input id="custOccasion" type="text" placeholder="The occasion (e.g. wedding, birthday)" />
+        <input id="custInspired" type="text" placeholder="A scent you'd love it inspired by" />
+      </div>
       <div style="text-align:center;">
-        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20I%27d%20love%20to%20chat%20about%20a%20personalised%20Amora%20scent%20for%20an%20occasion.">Enquire on WhatsApp</a>
+        <a class="btn" id="custBtn" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20I%27d%20love%20a%20personalised%20Amora%20scent.%20Can%20we%20chat%3F">Enquire on WhatsApp</a>
       </div>
     </div>
   </section>
@@ -147,13 +151,14 @@
         <h2>Vote for the next scent</h2>
         <p>Which personality should join the collection next? Tap your favourite to send me your vote on WhatsApp, or suggest your own.</p>
       </div>
+      <input class="vote-inspired" id="voteInspired" type="text" placeholder="What should it be inspired by? (optional)" />
       <div class="vote-grid">
-        <a class="vote-opt" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Dreamer.">The Dreamer</a>
-        <a class="vote-opt" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Romantic.">The Romantic</a>
-        <a class="vote-opt" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Rebel.">The Rebel</a>
-        <a class="vote-opt" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Free%20Spirit.">The Free Spirit</a>
-        <a class="vote-opt" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Homebody.">The Homebody</a>
-        <a class="vote-opt suggest" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20I%20have%20a%20scent%20idea%20for%20Amora%3A%20">Suggest your own</a>
+        <a class="vote-opt" data-scent="The Dreamer" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Dreamer.">The Dreamer</a>
+        <a class="vote-opt" data-scent="The Romantic" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Romantic.">The Romantic</a>
+        <a class="vote-opt" data-scent="The Rebel" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Rebel.">The Rebel</a>
+        <a class="vote-opt" data-scent="The Free Spirit" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Free%20Spirit.">The Free Spirit</a>
+        <a class="vote-opt" data-scent="The Homebody" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20vote%20for%20the%20next%20Amora%20scent%20is%3A%20The%20Homebody.">The Homebody</a>
+        <a class="vote-opt suggest" id="voteSuggest" target="_blank" rel="noopener" href="https://wa.me/27836553095?text=Hi%20Dani!%20My%20idea%20for%20the%20next%20Amora%20scent%20is%3A%20">Suggest your own</a>
       </div>
     </div>
   </section>
